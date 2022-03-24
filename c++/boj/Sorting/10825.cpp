@@ -21,6 +21,7 @@ int main(void){
 
   ios::sync_with_stdio(0);
   cin.tie(0);
+  cout.tie(0);
 
   int n;
   cin >> n;
@@ -32,7 +33,7 @@ int main(void){
   sort(v.begin(), v.end(),comp);
 
   for(auto c : v){
-    cout << c.name << endl;
+    cout << c.name << "\n";
   }
 
 return 0;
