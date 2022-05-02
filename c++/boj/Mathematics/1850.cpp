@@ -1,4 +1,5 @@
 #include <iostream>
+#include <math.h>
 
 using namespace std;
 
@@ -13,11 +14,11 @@ long long c = a % b;
   return b;
 }
 
-int changeNum(int a){
-  int n = 1;
-  while(a--){
-    n += n*10;
+void changeNum(long long a){
+  for(int i = 0; i < a; i++){
+    cout << 1;
   }
+
 }
 
 int main(void){
@@ -25,7 +26,7 @@ int main(void){
 long long a, b = 0;
   cin >> a >> b;
 
-  cout << gcd(a,b);
+  changeNum(gcd(a,b));
 
   return 0;
 }
